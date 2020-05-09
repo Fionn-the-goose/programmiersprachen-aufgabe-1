@@ -17,7 +17,7 @@ int sum_multiples()
 	}
 }
 
-TEST_CASE("describe_sum_multiples", "[counter]")
+TEST_CASE("describe_sum_multiples", "[sum_multiples]")
 {
 	REQUIRE(sum_multiples() == 23456);
 }
