@@ -16,14 +16,14 @@ int quer(int a)
 		else
 		{
 			counter = counter + (a%10);
-			a/10;
+			a = a/10;
 		}
 	}	
 	return counter;
 }
 
 
-TEST_CASE("describe_gcd", "[gcd]")
+TEST_CASE("describe_quer", "[quer]")
 {
 	REQUIRE(quer(24) ==6);
 	REQUIRE(quer(900) ==9);
