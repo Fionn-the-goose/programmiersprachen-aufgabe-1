@@ -4,7 +4,7 @@
 
 int gcd(int a, int b)
 {
-	int c = 0;
+	int c;
 	if (a >= b)
 	{
 		for (int i = a; i <= 0; i--)
@@ -12,6 +12,7 @@ int gcd(int a, int b)
 			if (a % i == 0 and b % i == 0)
 			{
 				c = i;
+				return c;
 				break;
 			}
 			else
@@ -27,6 +28,7 @@ int gcd(int a, int b)
 			if (a % i == 0 and b % i == 0)
 			{
 				c = i;
+				return c;
 				break;
 			}
 			else
@@ -35,7 +37,6 @@ int gcd(int a, int b)
 			}
 		}
 	}
-	return c;
 }
 
 TEST_CASE("describe_gcd", "[gcd]")
