@@ -4,9 +4,9 @@
 
 
 
-float volumen_zylinder(int radius, int hight)
+float volumen_zylinder(float radius, float hight)
 {
-	float volumen =  3.14159265358979323846 * pow(radius, 2) * hight;
+	float volumen =  3.14159265358979323846f * pow(radius, 2) * hight;
 	return volumen;
 }
 
@@ -14,7 +14,7 @@ float volumen_zylinder(int radius, int hight)
 
 TEST_CASE("Berechnung des Volumen eines Zylinders", "[volumen_zylinder]")
 {
-	REQUIRE(volumen_zylinder(3, 2) == Approx(18.849555));
+	REQUIRE(volumen_zylinder(3.0f, 2.0f) == Approx(18.849555));
 }
 
 
