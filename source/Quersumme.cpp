@@ -25,9 +25,9 @@ int quer(int a)
 
 TEST_CASE("describe_gcd", "[gcd]")
 {
-	REQUIRE(gcd(2,4) ==2);
-	REQUIRE(gcd(9,6) ==3);
-	REQUIRE(gcd(3,7) ==1);
+	REQUIRE(quer(24) ==6);
+	REQUIRE(quer(900) ==9);
+	REQUIRE(quer(3303497) ==29);
 }
 
 
