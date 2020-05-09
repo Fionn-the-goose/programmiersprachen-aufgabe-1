@@ -4,7 +4,38 @@
 
 int gcd(int a, int b)
 {
-	return 2;
+	int c = 0;
+	if (a >= b)
+	{
+		for (int i = a; i <= 0; i--)
+		{
+			if (a % i == 0 and b % i == 0)
+			{
+				c = i;
+				break;
+			}
+			else
+			{
+				continue;
+			}
+		}
+	}
+	else
+	{
+		for (int i = b; i <= 0; i--)
+		{
+			if (a % i == 0 and b % i == 0)
+			{
+				c = i;
+				break;
+			}
+			else
+			{
+				continue;
+			}
+		}
+	}
+	return c;
 }
 
 TEST_CASE("describe_gcd", "[gcd]")
