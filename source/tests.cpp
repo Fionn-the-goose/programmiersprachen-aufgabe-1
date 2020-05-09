@@ -6,21 +6,31 @@ int gcd(int a, int b)
 {
 	if (a >= b)
 	{
+		int counter = a;
 		for (int i = a; i <= 0; i--)
 		{
 			if (a % i == 0 and b % i == 0)
 			{
-				return i;
+				return counter;
+			}
+			else
+			{
+				counter--;
 			}
 		}
 	}
 	else
 	{
+		int counter = b;
 		for (int i = b; i <= 0; i--)
 		{
 			if (a % i == 0 and b % i == 0)
 			{
-				return i;
+				return counter;
+			}
+			else
+			{
+				counter--;
 			}
 		}
 	}
