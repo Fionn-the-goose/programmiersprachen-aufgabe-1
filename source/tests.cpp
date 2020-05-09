@@ -4,9 +4,9 @@
 
 int gcd(int a, int b)
 {
-	if (a == b)
+	if (b == 0)
 	{
-		return 1;
+		return a;
 	}
 	else
 	{
