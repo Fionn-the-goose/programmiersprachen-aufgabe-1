@@ -5,13 +5,13 @@
 int quer(int a)
 {
 	int counter = 0;
-	bool x  = false;
+	bool x = false;
 	while (x == false)
 	{
 		if (a < 10)
 		{
 			counter + a;
-			break;
+			x = true; 
 		}
 		else
 		{
