@@ -13,8 +13,9 @@ int sum_multiples()
 		{
 		counter = counter + i;
 		}
-	return counter;
+	
 	}
+	return counter;
 }
 
 TEST_CASE("describe_sum_multiples", "[sum_multiples]")
