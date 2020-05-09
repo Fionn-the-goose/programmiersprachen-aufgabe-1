@@ -14,7 +14,7 @@ float volumen_zylinder(float radius, float hight)
 
 TEST_CASE("Berechnung des Volumen eines Zylinders", "[volumen_zylinder]")
 {
-	REQUIRE(volumen_zylinder(3.0f, 2.0f) == Approx(18.849555));
+	REQUIRE(volumen_zylinder(3.0f, 2.0f) == Approx(56.548667));
 }
 
 
