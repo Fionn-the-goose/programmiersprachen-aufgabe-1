@@ -10,7 +10,7 @@ int quer(int a)
 	{
 		if (a < 10)
 		{
-			counter + a;
+			counter = counter + a;
 			x = true; 
 		}
 		else
@@ -18,16 +18,16 @@ int quer(int a)
 			counter = counter + (a%10);
 			a = a/10;
 		}
-	}	
+	}
 	return counter;
 }
 
 
 TEST_CASE("describe_quer", "[quer]")
 {
-	REQUIRE(quer(24354) ==18);
-	REQUIRE(quer(900) ==9);
-	REQUIRE(quer(3303497) ==29);
+	REQUIRE(quer(24354) == 18);
+	REQUIRE(quer(900) == 9);
+	REQUIRE(quer(3303497) == 29);
 }
 
 
