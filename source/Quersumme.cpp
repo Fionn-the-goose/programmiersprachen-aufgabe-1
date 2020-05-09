@@ -28,6 +28,9 @@ TEST_CASE("describe_quer", "[quer]")
 	REQUIRE(quer(24354) == 18);
 	REQUIRE(quer(900) == 9);
 	REQUIRE(quer(3303497) == 29);
+	REQUIRE(quer(0) == 0);
+	REQUIRE(quer(1) == 1);
+	REQUIRE(quer(74392785832645983498523456) == 139);
 }
 
 
