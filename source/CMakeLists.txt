@@ -6,6 +6,7 @@ add_executable(aufgabe1_3 aufgabe1_3.cpp)
 add_executable(Quersumme Quersumme.cpp)
 add_executable(sum-multiples sum-multiples.cpp)
 add_executable(Volumen Volumen.cpp)
+add_executable(factorial factorial.cpp)
 
 # Kommentieren Sie die folgenden Zeilen fuer die Aufgabe `mile_to_kilometer` aus
 #add_executable(mile_to_kilometer mile_to_kilometer.cpp)
