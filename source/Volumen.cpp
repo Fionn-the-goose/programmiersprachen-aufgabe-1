@@ -1,13 +1,12 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
 #include <cmath>
-#include <math.h>
 
 
 
 float volumen_zylinder(int radius, int hight)
 {
-	float volumen = M_PI * pow(radius, 2) * hight;
+	float volumen =  3.14159265358979323846 * pow(radius, 2) * hight;
 	return volumen;
 }
 
