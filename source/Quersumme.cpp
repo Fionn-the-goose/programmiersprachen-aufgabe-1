@@ -25,7 +25,7 @@ int quer(int a)
 
 TEST_CASE("describe_quer", "[quer]")
 {
-	REQUIRE(quer(24) ==6);
+	REQUIRE(quer(24354) ==18);
 	REQUIRE(quer(900) ==9);
 	REQUIRE(quer(3303497) ==29);
 }
