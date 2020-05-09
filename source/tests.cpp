@@ -4,37 +4,18 @@
 
 int gcd(int a, int b)
 {
-	if (a >= b)
+	else if (a == b)
 	{
-		int counter = a;
-		for (int i = a; i <= 0; i--)
-		{
-			if (a % i == 0 && b % i == 0)
-			{
-				return counter;
-			}
-			else
-			{
-				counter = counter - 1;
-			}
-		}
+		return 1;
 	}
 	else
 	{
-		int counter = b;
-		for (int i = b; i <= 0; i--)
-		{
-			if (a % i == 0 && b % i == 0)
-			{
-				return counter;
-			}
-			else
-			{
-				counter = counter - 1;
-			}
-		}
+		return gcd(b, (a%b));
 	}
 }
+
+
+
 
 TEST_CASE("describe_gcd", "[gcd]")
 {
