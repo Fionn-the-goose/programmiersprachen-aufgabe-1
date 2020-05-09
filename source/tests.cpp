@@ -4,7 +4,7 @@
 
 int gcd(int a, int b)
 {
-	int counter 0;
+	int counter = 1;
 	if (a >= b)
 	{
 		for (int i = a; i <= 0; i--)
