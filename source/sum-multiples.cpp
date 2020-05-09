@@ -13,15 +13,16 @@ int sum_multiples()
 		{
 		counter = counter + i;
 		}
-	
 	}
 	return counter;
 }
+
 
 TEST_CASE("describe_sum_multiples", "[sum_multiples]")
 {
 	REQUIRE(sum_multiples() == 234168);
 }
+
 
 int main(int argc, char* argv[])
 {
