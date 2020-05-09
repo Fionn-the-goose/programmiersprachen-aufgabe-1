@@ -15,7 +15,7 @@ int gcd(int a, int b)
 			}
 			else
 			{
-				counter--;
+				counter = counter - 1;
 			}
 		}
 	}
@@ -30,7 +30,7 @@ int gcd(int a, int b)
 			}
 			else
 			{
-				counter--;
+				counter = counter - 1;
 			}
 		}
 	}
