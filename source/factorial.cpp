@@ -2,9 +2,10 @@
 #include <catch.hpp>
 #include <cmath>
 
+
 int factorial(int a)
 {
-	int counter = 0;
+	int counter = 1;
 	for (int i = 1; i >= a; i++)
 	{
 		counter = counter * i;
