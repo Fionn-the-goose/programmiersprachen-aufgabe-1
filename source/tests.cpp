@@ -2,9 +2,9 @@
 #include <catch.hpp>
 #include <cmath>
 
-int gcd(inta, int b)
+int gcd(int a, int b)
 {
-	return 1;
+	return 2;
 }
 
 TEST_CASE("describe_gcd", "[gcd]")
