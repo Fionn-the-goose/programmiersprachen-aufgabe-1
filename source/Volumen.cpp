@@ -7,7 +7,7 @@
 
 float volumen_zylinder(float radius, float hight)
 {
-	float volumen = M_PI * radius^2 * hight;
+	float volumen = M_PI * pow(radius, 2) * hight;
 	return volumen;
 }
 
@@ -15,7 +15,7 @@ float volumen_zylinder(float radius, float hight)
 
 TEST_CASE("describe_volumen_zylinder", "[volumen_zylinder]")
 {
-	REQUIRE(fract(3.0, 2.0) == Approx(18.849555));
+	REQUIRE(volumen_zylinder(3.0, 2.0) == Approx(18.849555));
 }
 
 
