@@ -5,7 +5,7 @@
 
 double mile_to_kilometer(double mile)
 {
-	int km = mile/0.62137;
+	double km = mile/0.62137;
 	return km;
 }
 
