@@ -2,9 +2,9 @@
 #include <catch.hpp>
 #include <cmath>
 
-double fract(double eingabe)
+float fract(float eingabe)
 {
-	double ausgabe = floor(zahl)-zahl;
+	float ausgabe = floor(zahl)-zahl;
 	return abs(ausgabe)
 }
 
@@ -12,7 +12,7 @@ double fract(double eingabe)
 
 TEST_CASE("describe_fract", "[fract]")
 {
-	REQUIRE(fract(12,2934) == Approx(0,2934));
+	REQUIRE(fract(12.2934) == Approx(0.2934));
 }
 
 
