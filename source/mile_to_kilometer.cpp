@@ -3,9 +3,9 @@
 #include <cmath>
 
 
-double mile_to_kilometer(double mi)
+double mile_to_kilometer(double mile)
 {
-	int km = mi/0.62137;
+	int km = mile/0.62137;
 	return km;
 }
 
@@ -13,8 +13,8 @@ double mile_to_kilometer(double mi)
 int main(int argc, char* argv[])
 {
 	std::cout << "Geben sie einen Meilenwert ein zum Umrechnen in Kilometer:\n";
-	int mile = 0;
+	double mile = 0;
 	std::cin >> mile;
 	std::cout << "In Kilometern ist das: ";
-	std::cout << mile_to_kilometer(mile);
+	std::cout << mile_to_kilometer(mile) << std::endl;
 }
