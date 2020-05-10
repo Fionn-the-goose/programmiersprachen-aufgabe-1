@@ -142,9 +142,9 @@ TEST_CASE("describe_is_prime", "[is_prime]")
 
 TEST_CASE("describe_mile_to_kilometer", "[mile_to_kilometer]")
 {
-	REQUIRE(mile_to_kilometer(43) == 69.2019247791);
-	REQUIRE(mile_to_kilometer(0.44) ==0.708113);
-	REQUIRE(mile_to_kilometer(-1) ==-1.60935);
+	REQUIRE(mile_to_kilometer(43) == Approx(69.2019247791));
+	REQUIRE(mile_to_kilometer(0.44) == Approx(0.708113));
+	REQUIRE(mile_to_kilometer(-1) == Approx(-1.60935));
 }
 
 
