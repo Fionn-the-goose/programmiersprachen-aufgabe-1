@@ -5,7 +5,7 @@
 float fract(float eingabe)
 {
 	float ausgabe = floor(zahl)-zahl;
-	return abs(ausgabe)
+	return abs(ausgabe);
 }
 
 
