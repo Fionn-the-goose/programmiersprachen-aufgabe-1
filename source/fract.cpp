@@ -2,9 +2,9 @@
 #include <catch.hpp>
 #include <cmath>
 
-float fract(float eingabe)
+double fract(double eingabe)
 {
-	float ausgabe = floor(zahl)-zahl;
+	double ausgabe = floor(zahl)-zahl;
 	return abs(ausgabe)
 }
 
