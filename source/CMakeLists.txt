@@ -9,4 +9,5 @@ add_executable(Volumen Volumen.cpp)
 add_executable(factorial factorial.cpp)
 add_executable(is_prim is_prim.cpp)
 add_executable(mile_to_kilometer mile_to_kilometer.cpp)
+add_executable(fract fract.cpp)
 
