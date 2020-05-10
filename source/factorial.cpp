@@ -19,7 +19,6 @@ TEST_CASE("describe_factorial", "[factorial]")
 {
 	REQUIRE(factorial(7) == 5040);
 	REQUIRE(factorial(1) == 1);
-	REQUIRE(factorial(7) == 5040);
 }
 
 
