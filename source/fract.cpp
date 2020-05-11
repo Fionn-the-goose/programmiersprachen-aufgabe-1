@@ -4,7 +4,7 @@
 
 float fract(float eingabe)
 {
-	int more = static_cast<int>(eingabe)
+	int more = static_cast<int>(eingabe);
 	float ausgabe = eingabe-more;
 	return ausgabe;
 }
