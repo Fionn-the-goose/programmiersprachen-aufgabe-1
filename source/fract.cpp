@@ -4,8 +4,9 @@
 
 float fract(float eingabe)
 {
-	float ausgabe = floor(eingabe)-eingabe;
-	return abs(ausgabe);
+	int more = static_cast<int>(eingabe)
+	float ausgabe = eingabe-more;
+	return ausgabe;
 }
 
 
